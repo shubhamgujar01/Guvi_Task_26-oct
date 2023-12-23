@@ -1,0 +1,12 @@
+1. db.Practice_mongo.find()
+2. db.Practice_mongo.find({product_price: {$gt:400,$lt:800}})
+3. db.Practice_mongo.find({$or: [{product_price: {$lt: 400}}, {product_price: {$gt: 600}}]})
+4. db.Practice_mongo.find({product_price: {$gt: 500}}).limit(4)
+5. db.Practice_mongo.find({},{product_name: 1, product_price: 1})
+6. db.Practice_mongo.find({id: "10"})
+7. db.Practice_mongo.find({},{product_name: 1, product_price: 1})
+8. db.Practice_mongo.find({product_material: {$regex: /Soft/}})
+9. db.Practice_mongo.find({
+    product_color: "indigo",
+    product_price: { $eq: 492.00 }
+})
